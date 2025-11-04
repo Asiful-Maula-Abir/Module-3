@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Level Quiz App</title>
+
+  <!-- Chart.js for displaying result analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== QUIZ CONTAINER ===== -->
+  <div class="container" id="quiz-box">
+    <h1>📝Question</h1>
+
+  
+    <div class="timer">⏱ Time Left: <span id="time">01:00</span></div>
+
+    
+    <div id="quiz"></div>
+
+    
+    <div class="btns">
+      <button id="prevBtn" disabled>Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  
+  <div class="container" id="result-box" style="display:none;">
+    <h1>Quiz Result</h1>
+
+  
+    <div class="result" id="result"></div>
+
+    
+    <canvas id="resultChart"></canvas>
+
+    
+    <button onclick="location.reload()">🔁 Retake Quiz</button>
+  </div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
